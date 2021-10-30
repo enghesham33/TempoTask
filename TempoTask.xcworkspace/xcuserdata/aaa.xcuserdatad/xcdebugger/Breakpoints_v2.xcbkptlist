@@ -36,14 +36,14 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "B74B83FC-6C93-40BA-A424-95FFBDA7FB0A - a908b2d7765ad23"
+                  uuid = "B74B83FC-6C93-40BA-A424-95FFBDA7FB0A - 9b88eadbc24afc9f"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "TempoTask.NewsListAPIDataManager.getNewsList(searchText: Swift.String, startFrom: Swift.String, page: Swift.Int, completionHandler: (Swift.Array&lt;TempoTask.NewsItem&gt;) -&gt; (), faildHandler: (Swift.Optional&lt;TempoTask.ServerStatus&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "TempoTask.NewsListAPIDataManager.getNewsList(searchText: Swift.String, startFrom: Swift.String, page: Swift.Int, completionHandler: (TempoTask.NewsResponse) -&gt; (), faildHandler: (Swift.Optional&lt;TempoTask.ServerStatus&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "TempoTask"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aaa/Desktop/TempoTask/TempoTask/NewsList/APIDataManager/NewsListAPIDataManager.swift"
+                  urlString = "file:///Users/aaa/Documents/TempoTask/TempoTask/TempoTask/NewsList/APIDataManager/NewsListAPIDataManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "19"
@@ -51,19 +51,19 @@
                   offsetFromSymbolStart = "1055">
                </Location>
                <Location
-                  uuid = "B74B83FC-6C93-40BA-A424-95FFBDA7FB0A - 97a906ffc03a00a3"
+                  uuid = "B74B83FC-6C93-40BA-A424-95FFBDA7FB0A - b1eabb79d0c46015"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; () in TempoTask.NewsListAPIDataManager.getNewsList(searchText: Swift.String, startFrom: Swift.String, page: Swift.Int, completionHandler: (Swift.Array&lt;TempoTask.NewsItem&gt;) -&gt; (), faildHandler: (Swift.Optional&lt;TempoTask.ServerStatus&gt;) -&gt; ()) -&gt; ()"
+                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Dictionary&lt;Swift.String, Any&gt;&gt;) -&gt; () in TempoTask.NewsListAPIDataManager.getNewsList(searchText: Swift.String, startFrom: Swift.String, page: Swift.Int, completionHandler: (TempoTask.NewsResponse) -&gt; (), faildHandler: (Swift.Optional&lt;TempoTask.ServerStatus&gt;) -&gt; ()) -&gt; ()"
                   moduleName = "TempoTask"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/aaa/Desktop/TempoTask/TempoTask/NewsList/APIDataManager/NewsListAPIDataManager.swift"
+                  urlString = "file:///Users/aaa/Documents/TempoTask/TempoTask/TempoTask/NewsList/APIDataManager/NewsListAPIDataManager.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "20"
                   endingLineNumber = "20"
-                  offsetFromSymbolStart = "134">
+                  offsetFromSymbolStart = "119">
                </Location>
             </Locations>
          </BreakpointContent>

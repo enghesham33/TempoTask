@@ -25,6 +25,7 @@ protocol NewsListPresenterProtocol: class  {
     func getNumberOfItems() -> Int
     func getItemForRow(index: Int) -> NewsItem?
     func getNewsList(searchText: String, startFrom: String)
+    func openNewsDetails(newsItem: NewsItem)
 }
 
 protocol NewsListInteractorInputProtocol: class {

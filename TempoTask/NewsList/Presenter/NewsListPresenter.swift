@@ -29,6 +29,10 @@ class NewsListPresenter: NewsListPresenterProtocol {
     func getNewsList(searchText: String, startFrom: String) {
         interactor?.getNewsList(searchText: searchText, startFrom: startFrom)
     }
+    
+    func openNewsDetails(newsItem: NewsItem) {
+        wireFrame?.openNewsDetails(newsItem: newsItem)
+    }
 }
 
 extension NewsListPresenter: NewsListInteractorOutputProtocol {

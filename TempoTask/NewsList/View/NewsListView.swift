@@ -47,6 +47,10 @@ extension NewsListView: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: NewsItemCell.identifier, for: indexPath) as! NewsItemCell
         cell.newsItem = presenter?.getItemForRow(index: indexPath.row)
+        cell.contentView.addTapGesture { [weak self] _ in
+            guard let self = self, let presenter = self.presenter, let newsItem = presenter.getItemForRow(index: indexPath.row) else {return}
+            presenter.openNewsDetails(newsItem: newsItem)
+        }
         return cell
     }
     
@@ -54,7 +58,6 @@ extension NewsListView: UITableViewDataSource, UITableViewDelegate {
         guard indexPath.row == (presenter?.getNumberOfItems() ?? 0) - 1 else {
             return
         }
-        
         presenter?.getNewsList(searchText: searchBar.text ?? "Egypt", startFrom: "2021-10-01")
     }
 }

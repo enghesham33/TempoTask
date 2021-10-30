@@ -31,6 +31,7 @@ class NewsListWireframe: NewsListWireframeProtocol {
     }
     
     func openNewsDetails(newsItem: NewsItem) {
-        
+        let vc = NewsItemDetailsWireframe.createNewsItemDetailsView(newsItem: newsItem)
+        view?.navigationController?.pushViewController(vc, animated: true)
     }
 }
