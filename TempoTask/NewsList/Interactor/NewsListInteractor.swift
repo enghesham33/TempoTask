@@ -20,7 +20,7 @@ class NewsListInteractor: NewsListInteractorInputProtocol {
     
     var canLoadMore: Bool = true
     
-    func getNewsList(searchText: String, startFrom: String) {
+    func getNewsList(searchText: String) {
         if searchText != self.searchText {
             canLoadMore = true
             currentPage = 1
@@ -28,7 +28,7 @@ class NewsListInteractor: NewsListInteractorInputProtocol {
         }
         if canLoadMore {
             presenter?.showLoader()
-            APIDataManager?.getNewsList(searchText: searchText, startFrom: startFrom, page: currentPage, completionHandler: { [weak self] newsResponse in
+            APIDataManager?.getNewsList(searchText: searchText, page: currentPage, completionHandler: { [weak self] newsResponse in
                 self?.searchText = searchText
                 self?.newsList?.append(contentsOf: newsResponse.articles ?? [])
                 self?.presenter?.hideLoader()

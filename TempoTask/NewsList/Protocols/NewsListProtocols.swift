@@ -24,7 +24,7 @@ protocol NewsListPresenterProtocol: class  {
     func viewDidLoad()
     func getNumberOfItems() -> Int
     func getItemForRow(index: Int) -> NewsItem?
-    func getNewsList(searchText: String, startFrom: String)
+    func getNewsList(searchText: String)
     func openNewsDetails(newsItem: NewsItem)
 }
 
@@ -36,7 +36,7 @@ protocol NewsListInteractorInputProtocol: class {
     var canLoadMore: Bool { get set }
     var searchText: String { get set }
     
-    func getNewsList(searchText: String, startFrom: String)
+    func getNewsList(searchText: String)
 }
 
 protocol NewsListInteractorOutputProtocol: class {
@@ -54,5 +54,5 @@ protocol NewsListWireframeProtocol: class {
 }
 
 protocol NewsListAPIDataManagerProtocol: class {
-    func getNewsList(searchText: String, startFrom: String, page: Int, completionHandler: @escaping (NewsResponse) -> (), faildHandler: @escaping (ServerStatus?) -> Void)
+    func getNewsList(searchText: String, page: Int, completionHandler: @escaping (NewsResponse) -> (), faildHandler: @escaping (ServerStatus?) -> Void)
 }

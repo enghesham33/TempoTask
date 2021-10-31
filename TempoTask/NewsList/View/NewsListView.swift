@@ -58,7 +58,7 @@ extension NewsListView: UITableViewDataSource, UITableViewDelegate {
         guard indexPath.row == (presenter?.getNumberOfItems() ?? 0) - 1 else {
             return
         }
-        presenter?.getNewsList(searchText: searchBar.text ?? "Egypt", startFrom: "2021-10-01")
+        presenter?.getNewsList(searchText: searchBar.text ?? "Egypt")
     }
 }
 
@@ -78,7 +78,7 @@ extension NewsListView: UISearchBarDelegate {
                 } else {
                     self.timer.invalidate()
                     self.count = 0.5
-                    self.presenter?.getNewsList(searchText: searchText, startFrom: "2021-10-01")
+                    self.presenter?.getNewsList(searchText: searchText)
                     searchBar.endEditing(true)
                 }
             }

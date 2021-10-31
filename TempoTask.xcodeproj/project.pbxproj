@@ -35,6 +35,8 @@
 		0089FAE7272D4B2D00B9BDB5 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089FAE6272D4B2D00B9BDB5 /* NetworkingManager.swift */; };
 		0089FB19272D517C00B9BDB5 /* NewsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089FB18272D517C00B9BDB5 /* NewsResponse.swift */; };
 		0089FB1E272D51DA00B9BDB5 /* ArticleSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0089FB1D272D51DA00B9BDB5 /* ArticleSource.swift */; };
+		009B2FFF272E7387003C5C10 /* MockNewsItemDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B2FFE272E7387003C5C10 /* MockNewsItemDetailsView.swift */; };
+		009B3004272E73DC003C5C10 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 009B3003272E73DC003C5C10 /* MockData.swift */; };
 		041E8B9E6341E268A4F64222 /* Pods_TempoTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 709F1C93F2FE0CF2A5C7491E /* Pods_TempoTask.framework */; };
 		BED29583F1B00AC63C046A4A /* Pods_TempoTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BCC0C3735901754EC3B8058 /* Pods_TempoTaskTests.framework */; };
 		FA4C5B0BFAF1AFE469941AEF /* Pods_TempoTask_TempoTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D063AABE0312DD87EDD7E2D0 /* Pods_TempoTask_TempoTaskUITests.framework */; };
@@ -92,6 +94,8 @@
 		0089FAE6272D4B2D00B9BDB5 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		0089FB18272D517C00B9BDB5 /* NewsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsResponse.swift; sourceTree = "<group>"; };
 		0089FB1D272D51DA00B9BDB5 /* ArticleSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleSource.swift; sourceTree = "<group>"; };
+		009B2FFE272E7387003C5C10 /* MockNewsItemDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNewsItemDetailsView.swift; sourceTree = "<group>"; };
+		009B3003272E73DC003C5C10 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		26F555AEE8354299291FF6AB /* Pods-TempoTask-TempoTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoTask-TempoTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-TempoTask-TempoTaskUITests/Pods-TempoTask-TempoTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3BCC0C3735901754EC3B8058 /* Pods_TempoTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TempoTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D0758F6854326FF00DC4577 /* Pods-TempoTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TempoTask.debug.xcconfig"; path = "Target Support Files/Pods-TempoTask/Pods-TempoTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 				006F1B18272D704B00E1AF84 /* Protocols */,
 				006F1B1A272D704B00E1AF84 /* View */,
 				006F1B17272D704B00E1AF84 /* Wireframe */,
+				009B3003272E73DC003C5C10 /* MockData.swift */,
 			);
 			path = NewsItemDetails;
 			sourceTree = "<group>";
@@ -255,6 +260,7 @@
 			isa = PBXGroup;
 			children = (
 				006F1B1E272D775E00E1AF84 /* NewsItemDetailsView.swift */,
+				009B2FFE272E7387003C5C10 /* MockNewsItemDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -620,8 +626,10 @@
 				0089FADE272D445F00B9BDB5 /* NewsItem.swift in Sources */,
 				003C0E17272C0C100088AEF1 /* AppDelegate.swift in Sources */,
 				0089FAAE272D3B1E00B9BDB5 /* NewsListView.swift in Sources */,
+				009B3004272E73DC003C5C10 /* MockData.swift in Sources */,
 				0089FAC2272D3B9800B9BDB5 /* NewsListAPIDataManager.swift in Sources */,
 				003C0E51272C111F0088AEF1 /* BaseView.swift in Sources */,
+				009B2FFF272E7387003C5C10 /* MockNewsItemDetailsView.swift in Sources */,
 				006F1B36272D798800E1AF84 /* NewsItemDetailsPresenter.swift in Sources */,
 				0089FAB3272D3B5D00B9BDB5 /* NewsListWireframe.swift in Sources */,
 				00667A4B272D567900990AF9 /* NewsItemCell.swift in Sources */,

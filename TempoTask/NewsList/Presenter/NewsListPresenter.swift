@@ -15,7 +15,7 @@ class NewsListPresenter: NewsListPresenterProtocol {
     var wireFrame: NewsListWireframeProtocol?
     
     func viewDidLoad() {
-        getNewsList(searchText: "Egypt", startFrom: "2021-10-01")
+        getNewsList(searchText: "Egypt")
     }
     
     func getNumberOfItems() -> Int {
@@ -26,8 +26,8 @@ class NewsListPresenter: NewsListPresenterProtocol {
         return interactor?.newsList?[index]
     }
     
-    func getNewsList(searchText: String, startFrom: String) {
-        interactor?.getNewsList(searchText: searchText, startFrom: startFrom)
+    func getNewsList(searchText: String) {
+        interactor?.getNewsList(searchText: searchText)
     }
     
     func openNewsDetails(newsItem: NewsItem) {

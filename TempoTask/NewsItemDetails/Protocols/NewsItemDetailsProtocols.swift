@@ -37,6 +37,7 @@ protocol NewsItemDetailsWireframeProtocol: class {
     var view: UIViewController? { get set }
     
     static func createNewsItemDetailsView(newsItem: NewsItem) -> NewsItemDetailsView
+    static func createMockNewsItemDetailsView(newsItem: NewsItem) -> MockNewsItemDetailsView
     func openArticleSource(url: String)
 }
 

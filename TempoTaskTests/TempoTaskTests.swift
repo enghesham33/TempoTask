@@ -9,25 +9,25 @@ import XCTest
 @testable import TempoTask
 
 class TempoTaskTests: XCTestCase {
+    
+    var view: MockNewsItemDetailsView?
+    var presenter: NewsItemDetailsPresenter?
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        view = NewsItemDetailsWireframe.createMockNewsItemDetailsView(newsItem: MockData.newsItem)
+        presenter = view?.presenter as? NewsItemDetailsPresenter
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        view = nil
+        presenter = nil
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testPresenterNotNil() throws {
+        XCTAssertTrue(presenter != nil)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testAuthorName() throws {
+        XCTAssertTrue(view?.getAuthorName() == presenter?.getNewsItemDetails()?.author)
     }
-
 }

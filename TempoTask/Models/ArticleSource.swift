@@ -19,4 +19,10 @@ struct ArticleSource: Codable {
         id = dictionary?["id"] as? Int
         name = dictionary?["name"] as? String
     }
+    
+    // This constructor for mocking the data
+    public init(id: Int?, name: String?) {
+        self.id = id
+        self.name = name
+    }
 }
